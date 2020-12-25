@@ -1,0 +1,17 @@
+{
+    "name": "galacrm/galacrm",
+    "type": "project",
+    "require": {
+        "symfony/website-skeleton": "^5.2"
+    },
+    "require-dev": {
+        "symfony/web-profiler-bundle": "^5.2",
+        "symfony/debug": "^4.4"
+    },
+    "authors": [
+        {
+            "name": "Alexandr Zemlyanoy",
+            "email": "zemlyanoi.alex@yandex.ru"
+        }
+    ]
+}
