@@ -2,11 +2,28 @@
     "name": "galacrm/galacrm",
     "type": "project",
     "require": {
-        "symfony/website-skeleton": "^5.2"
+        "symfony/website-skeleton": "^5.2",
+        "symfony/flex": "^1.11"
     },
     "require-dev": {
         "symfony/web-profiler-bundle": "^5.2",
         "symfony/debug": "^4.4"
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    },
+    "extra": {
+        "symfony": {
+            "endpoint": "http://recipe.galacrm.store/",
+            "allow-contrib": false,
+            "require": "5.2.*"
+        }
+    },
+    "config": {
+        "secure-http": false
     },
     "authors": [
         {
