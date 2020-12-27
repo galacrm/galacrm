@@ -2,6 +2,7 @@
     "name": "galacrm/galacrm",
     "type": "project",
     "require": {
+        "galacrm/security-bundle": "*",
         "symfony/website-skeleton": "^5.2",
         "symfony/flex": "^1.11"
     },
@@ -25,6 +26,12 @@
     "config": {
         "secure-http": false
     },
+    "repositories": [
+        {
+            "type": "svn",
+            "url": "git@github.com:galacrm/security-bundle.git"
+        }
+    ],
     "authors": [
         {
             "name": "Alexandr Zemlyanoy",
